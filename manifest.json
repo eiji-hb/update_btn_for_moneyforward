@@ -1,14 +1,26 @@
 {
-  "name": "bulk_update_for_moneyforward",
-  "action": {},
-  "manifest_version": 3,
-  "version": "0.1",
-  "description": "Turns the page red when you click the icon",
-  "permissions": [
-    "activeTab",
-    "scripting"
-  ],
-  "background": {
-    "service_worker": "background.js"
-  }
+    "name": "bulk_update_for_moneyforward",
+    "action": {},
+    "manifest_version": 3,
+    "version": "0.1",
+    "description": "Turns the page red when you click the icon",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "tabs"
+    ],
+    "host_permissions": [
+        "https://moneyforward.com/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+          "js": ["content.js"],
+          "matches": [
+            "https://moneyforward.com/accounts"
+          ]
+        }
+      ]
 }

@@ -1,13 +1,6 @@
-function reddenPage() {
-    document.body.style.backgroundColor = 'red';
-}
+const url = "https://moneyforward.com/accounts"
 
-chrome.action.onClicked.addListener((tab) => {
-    console.log("@@", tab)
-    if (tab.url.includes("https://moneyforward")) {
-        chrome.scripting.executeScript({
-            target: { tabId: tab.id },
-            function: reddenPage
-        });
-    }
+chrome.action.onClicked.addListener(async () => {
+    // 新しいタブ作成
+    const res = await chrome.tabs.create({ url })
 });
