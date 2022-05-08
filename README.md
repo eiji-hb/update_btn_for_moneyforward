@@ -1,6 +1,6 @@
 # update_btn_for_moneyforward
 
 # usage
-![gif](https://user-images.githubusercontent.com/53224700/167296501-8cebecd8-bad5-4356-9550-606a00e71590.gif)
+![Videotogif (1)](https://user-images.githubusercontent.com/53224700/167296771-ab60fc4d-74dd-4600-8180-e186abe511ec.gif)
 # author
 https://twitter.com/st5e_jp
